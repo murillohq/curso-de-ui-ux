@@ -213,8 +213,9 @@
         <div
           class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
           <div
-            class="h-8 bg-zinc-200 rounded flex items-center px-2 text-[10px] text-zinc-500">
-            ← Voltar
+            class="h-8 bg-zinc-200 rounded flex items-center justify-between px-2 text-[10px] text-zinc-500">
+            <span>← Voltar</span>
+            <span class="relative">🛒<span id="cart-badge" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-4 h-4 text-[8px] flex items-center justify-center transition-transform">0</span></span>
           </div>
           <div
             class="h-28 ph rounded flex items-center justify-center text-[10px] text-zinc-500">
@@ -260,14 +261,17 @@
               class="h-7 w-16 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[10px]">
               − 1 +
             </div>
-            <div
-              class="h-11 flex-1 ml-2 bg-red-500 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md">
-              ADICIONAR AO CARRINHO
-            </div>
+            <button
+              id="add-btn"
+              onclick="addToCart()"
+              class="h-11 flex-1 ml-2 bg-red-500 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md transition-all duration-200 active:scale-95">
+              <span id="add-btn-label">🛒&nbsp; Adicionar ao carrinho</span>
+            </button>
           </div>
         </div>
         <p class="text-[10px] text-zinc-400 mt-2 text-center w-[260px]">
-          Botão vermelho grande = CTA principal. Ao tocar, vai para o Carrinho
+          ✨ Clique no botão pra ver a microinteração: ele confirma a ação e o
+          carrinho no topo pulsa e soma +1
         </p>
       </div>
 
@@ -394,5 +398,59 @@
         </p>
       </div>
     </div>
+
+    <!-- MICROINTERAÇÃO -->
+    <div class="max-w-[900px] mx-auto px-6 pb-8">
+      <h2 class="text-lg font-bold text-center">Microinteração — Confirmação de "Adicionar ao carrinho"</h2>
+      <p class="text-xs text-zinc-500 text-center mt-1 mb-4">Teste ao vivo no protótipo acima (Tela 2). Estrutura baseada no modelo de 4 partes de microinterações.</p>
+      <div class="grid sm:grid-cols-4 gap-3 text-[11px]">
+        <div class="bg-white border border-zinc-200 rounded-xl p-3">
+          <p class="font-bold text-zinc-600 mb-1">1. Gatilho</p>
+          <p class="text-zinc-500">Usuário toca no botão "Adicionar ao carrinho"</p>
+        </div>
+        <div class="bg-white border border-zinc-200 rounded-xl p-3">
+          <p class="font-bold text-zinc-600 mb-1">2. Regras</p>
+          <p class="text-zinc-500">Botão só reage se um tamanho estiver selecionado; não pode ser clicado 2x seguidas em menos de 1s</p>
+        </div>
+        <div class="bg-white border border-zinc-200 rounded-xl p-3">
+          <p class="font-bold text-zinc-600 mb-1">3. Feedback</p>
+          <p class="text-zinc-500">Botão encolhe, muda de vermelho pra verde, texto vira "Adicionado ✓" e o ícone do carrinho pulsa</p>
+        </div>
+        <div class="bg-white border border-zinc-200 rounded-xl p-3">
+          <p class="font-bold text-zinc-600 mb-1">4. Loop/Modo</p>
+          <p class="text-zinc-500">Após 1,2s o botão volta ao estado normal, pronto pra um novo item ser adicionado</p>
+        </div>
+      </div>
+      <p class="text-[11px] text-zinc-500 mt-4 text-center max-w-lg mx-auto">
+        <b>Por que importa:</b> sem essa microinteração, o usuário não tem certeza se o toque "funcionou" e pode clicar várias vezes (gerando itens duplicados). O feedback visual imediato reduz essa incerteza e reforça a ação.
+      </p>
+    </div>
+
+    <script>
+      let cartCount = 0;
+      function addToCart(){
+        const btn = document.getElementById('add-btn');
+        const label = document.getElementById('add-btn-label');
+        const badge = document.getElementById('cart-badge');
+        if(btn.dataset.locked === '1') return; // regra: evita duplo clique
+        btn.dataset.locked = '1';
+
+        btn.classList.remove('bg-red-500');
+        btn.classList.add('bg-green-500');
+        label.textContent = '✓ Adicionado';
+
+        cartCount++;
+        badge.textContent = cartCount;
+        badge.classList.add('scale-150');
+        setTimeout(()=> badge.classList.remove('scale-150'), 300);
+
+        setTimeout(()=>{
+          btn.classList.remove('bg-green-500');
+          btn.classList.add('bg-red-500');
+          label.textContent = '🛒  Adicionar ao carrinho';
+          btn.dataset.locked = '0';
+        }, 1200);
+      }
+    </script>
   </body>
 </html>
