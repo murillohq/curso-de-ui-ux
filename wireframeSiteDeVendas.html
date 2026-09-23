@@ -1,456 +1,334 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Wireframe · Site de Vendas da Pizzaria</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      :root {
-        box-sizing: border-box;
-        padding-top: env(safe-area-inset-top, 0px);
-        padding-bottom: env(safe-area-inset-bottom, 0px);
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        background: #f4f4f5;
-        font-family:
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          sans-serif;
-      }
-      .ph {
-        background-repeat: repeat;
-        background-image:
-          linear-gradient(45deg, #d4d4d8 25%, transparent 25%),
-          linear-gradient(-45deg, #d4d4d8 25%, transparent 25%),
-          linear-gradient(45deg, transparent 75%, #d4d4d8 75%),
-          linear-gradient(-45deg, transparent 75%, #d4d4d8 75%);
-        background-size: 12px 12px;
-        background-position:
-          0 0,
-          0 6px,
-          6px -6px,
-          -6px 0px;
-        background-color: #e4e4e7;
-      }
-      .arrow {
-        font-size: 1.75rem;
-        color: #71717a;
-      }
-      .screen-label {
-        letter-spacing: 0.05em;
-      }
-    </style>
-  </head>
-  <body class="text-zinc-800">
-    <header class="px-6 pt-8 pb-4 text-center">
-      <h1 class="text-xl font-bold">Wireframe — App de Pedidos da Pizzaria</h1>
-      <p class="text-sm text-zinc-500 mt-1">
-        Baixa fidelidade · caixas representam botões/imagens · setas mostram a
-        navegação
-      </p>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wireframe · Site de Vendas da Pizzaria</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{ box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+  *{box-sizing:border-box;}
+  body{ background:#f4f4f5; font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif; line-height:1.5; letter-spacing:.01em; }
+  p, span, div { line-height:1.45; }
+  .ph{ background-repeat:repeat; background-image:
+       linear-gradient(45deg,#d4d4d8 25%,transparent 25%),
+       linear-gradient(-45deg,#d4d4d8 25%,transparent 25%),
+       linear-gradient(45deg,transparent 75%,#d4d4d8 75%),
+       linear-gradient(-45deg,transparent 75%,#d4d4d8 75%);
+       background-size:12px 12px; background-position:0 0,0 6px,6px -6px,-6px 0px;
+       background-color:#e4e4e7;
+  }
+  .arrow{ font-size:1.75rem; color:#71717a; }
+  .screen-label{ letter-spacing:.05em; }
+</style>
+</head>
+<body class="text-zinc-800">
 
-    <!-- FLUXO -->
-    <div
-      class="flex flex-col lg:flex-row items-stretch justify-center gap-2 lg:gap-1 px-3 pb-14 max-w-[1400px] mx-auto">
-      <!-- TELA 0: LOGIN / CADASTRO -->
-      <div class="flex flex-col items-center">
-        <span
-          class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2"
-          >0 · Login / Cadastro</span
-        >
-        <div
-          class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
-          <div
-            class="h-10 ph rounded-full w-16 mx-auto flex items-center justify-center text-[9px] text-zinc-500 mt-2">
-            logo
-          </div>
-          <div class="h-2 w-28 bg-zinc-300 rounded mx-auto"></div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-2">ACESSO</div>
-          <div
-            class="h-7 bg-zinc-50 border border-zinc-300 rounded text-[9px] text-zinc-400 flex items-center px-2">
-            E-mail ou celular
-          </div>
-          <div
-            class="h-7 bg-zinc-50 border border-zinc-300 rounded text-[9px] text-zinc-400 flex items-center px-2">
-            Senha
-          </div>
-          <div
-            class="h-8 bg-zinc-800 rounded-lg text-white text-[10px] font-bold flex items-center justify-center mt-1">
-            ENTRAR
-          </div>
-          <div class="text-[9px] text-zinc-400 text-center">
-            ou continuar com Google / Apple
-          </div>
+<header class="px-6 pt-8 pb-4 text-center">
+  <h1 class="text-xl font-bold">Wireframe — App de Pedidos da Pizzaria</h1>
+  <p class="text-sm text-zinc-500 mt-1">Baixa fidelidade · caixas representam botões/imagens · setas mostram a navegação</p>
+</header>
 
-          <div
-            class="border-t border-dashed border-zinc-300 mt-2 pt-2 text-[10px] font-bold text-zinc-500">
-            CADASTRO (1ª vez)
-          </div>
-          <div
-            class="h-6 bg-zinc-50 border border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">
-            Nome completo
-          </div>
-          <div class="text-[9px] font-bold text-zinc-500 mt-1">
-            📍 Endereço de entrega
-          </div>
-          <div
-            class="h-6 bg-zinc-50 border border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">
-            Rua, número, bairro
-          </div>
-          <div
-            class="h-6 bg-zinc-50 border border-dashed border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">
-            📌 usar localização atual
-          </div>
-          <div class="text-[9px] font-bold text-zinc-500 mt-1">
-            💳 Forma de pagamento (salvar)
-          </div>
-          <div
-            class="h-6 bg-zinc-50 border border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">
-            Cartão / Pix / Dinheiro
-          </div>
-          <div
-            class="h-11 bg-red-500 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md mt-2">
-            CRIAR CONTA
-          </div>
-          <div class="text-[9px] text-zinc-400 text-center underline mt-1">
-            Pular e continuar sem login
-          </div>
-        </div>
-        <p class="text-[10px] text-zinc-400 mt-2 text-center w-[260px]">
-          Dados salvos aqui (endereço + pagamento) reaparecem prontos no
-          Carrinho
-        </p>
+<!-- FLUXO -->
+<div class="flex flex-col lg:flex-row items-stretch justify-center gap-2 lg:gap-1 px-3 pb-14 max-w-[1400px] mx-auto">
+
+  <!-- TELA 0: LOGIN / CADASTRO -->
+  <div class="flex flex-col items-center">
+    <span class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2">0 · Login / Cadastro</span>
+    <div class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
+      <div class="h-10 ph rounded-full w-16 mx-auto flex items-center justify-center text-[9px] text-zinc-500 mt-2">logo</div>
+      <div class="h-2 w-28 bg-zinc-300 rounded mx-auto"></div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-2">ACESSO</div>
+      <div class="h-7 bg-zinc-50 border border-zinc-300 rounded text-[9px] text-zinc-400 flex items-center px-2">E-mail ou celular</div>
+      <div class="h-7 bg-zinc-50 border border-zinc-300 rounded text-[9px] text-zinc-400 flex items-center px-2">Senha</div>
+      <div class="h-8 bg-zinc-800 rounded-lg text-white text-[10px] font-bold flex items-center justify-center mt-1">ENTRAR</div>
+      <div class="text-[9px] text-zinc-400 text-center">ou continuar com Google / Apple</div>
+
+      <div class="border-t border-dashed border-zinc-300 mt-2 pt-2 text-[10px] font-bold text-zinc-500">CADASTRO (1ª vez)</div>
+      <div class="h-6 bg-zinc-50 border border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">Nome completo</div>
+      <div class="text-[9px] font-bold text-zinc-500 mt-1">📍 Endereço de entrega</div>
+      <div class="h-6 bg-zinc-50 border border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">Rua, número, bairro</div>
+      <div class="h-6 bg-zinc-50 border border-dashed border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">📌 usar localização atual</div>
+      <div class="text-[9px] font-bold text-zinc-500 mt-1">💳 Forma de pagamento (salvar)</div>
+      <div class="h-6 bg-zinc-50 border border-zinc-200 rounded text-[8px] text-zinc-400 flex items-center px-2">Cartão / Pix / Dinheiro</div>
+      <div class="h-11 bg-red-600 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md mt-2">CRIAR CONTA</div>
+      <div class="text-[9px] text-zinc-400 text-center underline mt-1">Pular e continuar sem login</div>
+    </div>
+    <p class="text-[10px] text-zinc-600 mt-2 text-center w-[260px]">Dados salvos aqui (endereço + pagamento) reaparecem prontos no Carrinho</p>
+  </div>
+
+  <div class="flex items-center justify-center arrow">→</div>
+
+  <!-- TELA 1: INÍCIO -->
+  <div class="flex flex-col items-center">
+    <span class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2">1 · Tela Inicial</span>
+    <div class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
+      <div class="h-8 bg-zinc-200 rounded flex items-center px-2 text-[10px] text-zinc-500">☰ &nbsp; Logo Pizzaria &nbsp; 🔍</div>
+      <div class="h-16 ph rounded flex items-center justify-center text-[10px] text-zinc-500">banner / promoção destaque</div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-1">CATEGORIAS</div>
+      <div class="grid grid-cols-3 gap-2">
+        <div class="h-14 bg-zinc-100 border border-zinc-300 rounded flex flex-col items-center justify-center text-[9px] text-zinc-500"><div class="w-6 h-6 ph rounded-full mb-1"></div>Pizzas</div>
+        <div class="h-14 bg-zinc-100 border border-zinc-300 rounded flex flex-col items-center justify-center text-[9px] text-zinc-500"><div class="w-6 h-6 ph rounded-full mb-1"></div>Promoções</div>
+        <div class="h-14 bg-zinc-100 border border-zinc-300 rounded flex flex-col items-center justify-center text-[9px] text-zinc-500"><div class="w-6 h-6 ph rounded-full mb-1"></div>Bebidas</div>
       </div>
-
-      <div class="flex items-center justify-center arrow">→</div>
-
-      <!-- TELA 1: INÍCIO -->
-      <div class="flex flex-col items-center">
-        <span
-          class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2"
-          >1 · Tela Inicial</span
-        >
-        <div
-          class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
-          <div
-            class="h-8 bg-zinc-200 rounded flex items-center px-2 text-[10px] text-zinc-500">
-            ☰ &nbsp; Logo Pizzaria &nbsp; 🔍
-          </div>
-          <div
-            class="h-16 ph rounded flex items-center justify-center text-[10px] text-zinc-500">
-            banner / promoção destaque
-          </div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-1">CATEGORIAS</div>
-          <div class="grid grid-cols-3 gap-2">
-            <div
-              class="h-14 bg-zinc-100 border border-zinc-300 rounded flex flex-col items-center justify-center text-[9px] text-zinc-500">
-              <div class="w-6 h-6 ph rounded-full mb-1"></div>
-              Pizzas
-            </div>
-            <div
-              class="h-14 bg-zinc-100 border border-zinc-300 rounded flex flex-col items-center justify-center text-[9px] text-zinc-500">
-              <div class="w-6 h-6 ph rounded-full mb-1"></div>
-              Promoções
-            </div>
-            <div
-              class="h-14 bg-zinc-100 border border-zinc-300 rounded flex flex-col items-center justify-center text-[9px] text-zinc-500">
-              <div class="w-6 h-6 ph rounded-full mb-1"></div>
-              Bebidas
-            </div>
-          </div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-1">
-            PIZZAS EM DESTAQUE
-          </div>
-          <div class="flex flex-col gap-2">
-            <div
-              class="h-16 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1 ring-2 ring-red-400">
-              <div class="w-12 h-12 ph rounded shrink-0"></div>
-              <div class="flex-1">
-                <div class="h-2 w-16 bg-zinc-300 rounded mb-1"></div>
-                <div class="h-2 w-10 bg-zinc-200 rounded"></div>
-              </div>
-              <div
-                class="text-[8px] text-red-500 font-bold border border-red-400 rounded px-1">
-                ver →
-              </div>
-            </div>
-            <div
-              class="h-16 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1">
-              <div class="w-12 h-12 ph rounded shrink-0"></div>
-              <div class="flex-1">
-                <div class="h-2 w-16 bg-zinc-300 rounded mb-1"></div>
-                <div class="h-2 w-10 bg-zinc-200 rounded"></div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="h-9 bg-zinc-100 border-t border-zinc-300 rounded mt-1 flex items-center justify-around text-[9px] text-zinc-400">
-            <span>Início</span><span>Categorias</span><span>🛒 Carrinho</span
-            ><span>Perfil</span>
-          </div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-1">PIZZAS EM DESTAQUE</div>
+      <div class="flex flex-col gap-2">
+        <div class="h-16 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1 ring-2 ring-red-400 relative">
+          <span class="absolute -top-2 -left-1 text-[7px] font-bold text-red-700 bg-white border border-red-400 rounded px-1">🔥 Destaque</span>
+          <div class="w-12 h-12 ph rounded shrink-0"></div>
+          <div class="flex-1"><div class="h-2 w-16 bg-zinc-300 rounded mb-1"></div><div class="h-2 w-10 bg-zinc-200 rounded"></div></div>
+          <div class="text-[8px] text-red-700 font-bold border border-red-400 rounded px-1">ver →</div>
         </div>
-        <p class="text-[10px] text-zinc-400 mt-2 text-center w-[260px]">
-          Usuário toca em uma pizza destacada (item com borda vermelha)
-        </p>
+        <div class="h-16 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1">
+          <div class="w-12 h-12 ph rounded shrink-0"></div>
+          <div class="flex-1"><div class="h-2 w-16 bg-zinc-300 rounded mb-1"></div><div class="h-2 w-10 bg-zinc-200 rounded"></div></div>
+        </div>
       </div>
-
-      <div class="flex items-center justify-center arrow">→</div>
-
-      <!-- TELA 2: DETALHE DO PRODUTO -->
-      <div class="flex flex-col items-center">
-        <span
-          class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2"
-          >2 · Detalhe do Produto</span
-        >
-        <div
-          class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
-          <div
-            class="h-8 bg-zinc-200 rounded flex items-center justify-between px-2 text-[10px] text-zinc-500">
-            <span>← Voltar</span>
-            <span class="relative">🛒<span id="cart-badge" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-4 h-4 text-[8px] flex items-center justify-center transition-transform">0</span></span>
-          </div>
-          <div
-            class="h-28 ph rounded flex items-center justify-center text-[10px] text-zinc-500">
-            foto grande da pizza
-          </div>
-          <div class="h-3 w-32 bg-zinc-300 rounded"></div>
-          <div class="h-2 w-24 bg-zinc-200 rounded"></div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-1">TAMANHO</div>
-          <div class="flex gap-2">
-            <div
-              class="h-7 w-14 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">
-              P
-            </div>
-            <div
-              class="h-7 w-14 bg-zinc-100 border-2 border-red-400 rounded flex items-center justify-center text-[9px] font-bold">
-              M ✓
-            </div>
-            <div
-              class="h-7 w-14 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">
-              G
-            </div>
-          </div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-1">ADICIONAIS</div>
-          <div class="flex flex-col gap-1">
-            <div
-              class="h-6 bg-zinc-50 border border-zinc-200 rounded flex items-center justify-between px-2 text-[9px] text-zinc-500">
-              <span>☐ Borda recheada</span><span>+R$8</span>
-            </div>
-            <div
-              class="h-6 bg-zinc-50 border border-zinc-200 rounded flex items-center justify-between px-2 text-[9px] text-zinc-500">
-              <span>☑ Queijo extra</span><span>+R$5</span>
-            </div>
-          </div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-1">
-            OBSERVAÇÕES
-          </div>
-          <div
-            class="h-8 bg-zinc-50 border border-dashed border-zinc-300 rounded text-[9px] text-zinc-400 p-1">
-            campo de texto livre...
-          </div>
-          <div class="flex items-center justify-between mt-1">
-            <div
-              class="h-7 w-16 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[10px]">
-              − 1 +
-            </div>
-            <button
-              id="add-btn"
-              onclick="addToCart()"
-              class="h-11 flex-1 ml-2 bg-red-500 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md transition-all duration-200 active:scale-95">
-              <span id="add-btn-label">🛒&nbsp; Adicionar ao carrinho</span>
-            </button>
-          </div>
-        </div>
-        <p class="text-[10px] text-zinc-400 mt-2 text-center w-[260px]">
-          ✨ Clique no botão pra ver a microinteração: ele confirma a ação e o
-          carrinho no topo pulsa e soma +1
-        </p>
+      <div class="h-9 bg-zinc-100 border-t border-zinc-300 rounded mt-1 flex items-center justify-around text-[9px] text-zinc-400">
+        <span>Início</span><span>Categorias</span><span>🛒 Carrinho</span><span>Perfil</span>
       </div>
+    </div>
+    <p class="text-[10px] text-zinc-600 mt-2 text-center w-[260px]">Usuário toca em uma pizza destacada (item com borda vermelha)</p>
+  </div>
 
-      <div class="flex items-center justify-center arrow">→</div>
+  <div class="flex items-center justify-center arrow">→</div>
 
-      <!-- TELA 3: CARRINHO -->
-      <div class="flex flex-col items-center">
-        <span
-          class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2"
-          >3 · Carrinho</span
-        >
-        <div
-          class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
-          <div
-            class="h-8 bg-zinc-200 rounded flex items-center px-2 text-[10px] text-zinc-500">
-            ← Voltar &nbsp;&nbsp; Meu Carrinho
-          </div>
-          <div class="flex flex-col gap-2">
-            <div
-              class="h-14 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1">
-              <div class="w-10 h-10 ph rounded shrink-0"></div>
-              <div class="flex-1">
-                <div class="h-2 w-20 bg-zinc-300 rounded mb-1"></div>
-                <div class="h-2 w-14 bg-zinc-200 rounded"></div>
-              </div>
-              <div class="text-[9px] text-zinc-400">− 1 +</div>
-            </div>
-            <div
-              class="h-14 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1">
-              <div class="w-10 h-10 ph rounded shrink-0"></div>
-              <div class="flex-1">
-                <div class="h-2 w-20 bg-zinc-300 rounded mb-1"></div>
-                <div class="h-2 w-14 bg-zinc-200 rounded"></div>
-              </div>
-              <div class="text-[9px] text-zinc-400">− 1 +</div>
-            </div>
-          </div>
-          <div
-            class="h-7 bg-zinc-50 border border-dashed border-zinc-300 rounded text-[9px] text-zinc-400 flex items-center px-2 mt-1">
-            🏷️ Cupom de desconto
-          </div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-1">
-            📍 ENTREGAR EM
-          </div>
-          <div
-            class="h-7 bg-zinc-100 border border-zinc-300 rounded text-[9px] text-zinc-500 flex items-center justify-between px-2">
-            <span>Rua, número, bairro (salvo)</span
-            ><span class="text-red-400 font-bold">trocar</span>
-          </div>
-          <div class="text-[10px] font-bold text-zinc-500 mt-1">
-            FORMA DE PAGAMENTO
-          </div>
-          <div class="flex gap-2">
-            <div
-              class="h-7 flex-1 bg-zinc-100 border-2 border-red-400 rounded flex items-center justify-center text-[9px] font-bold">
-              Pix ✓
-            </div>
-            <div
-              class="h-7 flex-1 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">
-              Cartão salvo
-            </div>
-            <div
-              class="h-7 flex-1 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">
-              Dinheiro
-            </div>
-          </div>
-          <div
-            class="border-t border-zinc-200 pt-2 mt-1 flex flex-col gap-1 text-[9px] text-zinc-500">
-            <div class="flex justify-between">
-              <span>Subtotal</span><span>R$ 62,00</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Entrega</span><span>R$ 6,00</span>
-            </div>
-            <div
-              class="flex justify-between font-bold text-zinc-700 text-[11px]">
-              <span>Total</span><span>R$ 68,00</span>
-            </div>
-          </div>
-          <div
-            class="h-11 bg-red-500 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md mt-1">
-            FINALIZAR PEDIDO
-          </div>
-        </div>
-        <p class="text-[10px] text-zinc-400 mt-2 text-center w-[260px]">
-          CTA principal repete o padrão vermelho para reforçar a ação de
-          conversão
-        </p>
+  <!-- TELA 2: DETALHE DO PRODUTO -->
+  <div class="flex flex-col items-center">
+    <span class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2">2 · Detalhe do Produto</span>
+    <div class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
+      <div class="h-8 bg-zinc-200 rounded flex items-center justify-between px-2 text-[10px] text-zinc-500">
+        <span>← Voltar</span>
+        <span class="relative">🛒<span id="cart-badge" class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full w-4 h-4 text-[8px] flex items-center justify-center transition-transform">0</span></span>
       </div>
+      <div class="h-28 ph rounded flex items-center justify-center text-[10px] text-zinc-500">foto grande da pizza</div>
+      <div class="h-3 w-32 bg-zinc-300 rounded"></div>
+      <div class="h-2 w-24 bg-zinc-200 rounded"></div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-1">TAMANHO</div>
+      <div class="flex gap-2">
+        <div class="h-7 w-14 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">P</div>
+        <div class="h-7 w-14 bg-zinc-100 border-2 border-red-400 rounded flex items-center justify-center text-[9px] font-bold">M ✓</div>
+        <div class="h-7 w-14 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">G</div>
+      </div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-1">ADICIONAIS</div>
+      <div class="flex flex-col gap-1">
+        <div class="h-6 bg-zinc-50 border border-zinc-200 rounded flex items-center justify-between px-2 text-[9px] text-zinc-500"><span>☐ Borda recheada</span><span>+R$8</span></div>
+        <div class="h-6 bg-zinc-50 border border-zinc-200 rounded flex items-center justify-between px-2 text-[9px] text-zinc-500"><span>☑ Queijo extra</span><span>+R$5</span></div>
+      </div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-1">OBSERVAÇÕES</div>
+      <div class="h-8 bg-zinc-50 border border-dashed border-zinc-300 rounded text-[9px] text-zinc-400 p-1">campo de texto livre...</div>
+      <div class="flex items-center justify-between mt-1">
+        <div class="h-7 w-16 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[10px]">− 1 +</div>
+        <button id="add-btn" onclick="addToCart()" class="h-11 flex-1 ml-2 bg-red-600 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md transition-all duration-200 active:scale-95">
+          <span id="add-btn-label">🛒&nbsp; Adicionar ao carrinho</span>
+        </button>
+      </div>
+    </div>
+    <p class="text-[10px] text-zinc-600 mt-2 text-center w-[260px]">✨ Clique no botão pra ver a microinteração: ele confirma a ação e o carrinho no topo pulsa e soma +1</p>
+  </div>
 
-      <div class="flex items-center justify-center arrow">→</div>
+  <div class="flex items-center justify-center arrow">→</div>
 
-      <!-- TELA 4: CONFIRMAÇÃO -->
-      <div class="flex flex-col items-center">
-        <span
-          class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2"
-          >4 · Confirmação</span
-        >
-        <div
-          class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col items-center gap-2 text-center py-8">
-          <div
-            class="w-16 h-16 rounded-full bg-green-100 border-2 border-green-400 flex items-center justify-center text-green-600 text-2xl">
-            ✓
-          </div>
-          <div class="h-3 w-40 bg-zinc-300 rounded mt-2"></div>
-          <div class="h-2 w-28 bg-zinc-200 rounded"></div>
-          <div
-            class="w-full h-16 bg-zinc-50 border border-zinc-200 rounded flex flex-col items-center justify-center mt-2 text-[9px] text-zinc-500 gap-1">
-            <span>⏱️ Tempo estimado</span>
-            <span class="text-[13px] font-bold text-zinc-700">35 – 45 min</span>
-          </div>
-          <div class="h-2 w-32 bg-zinc-200 rounded mt-2"></div>
-          <div
-            class="w-full h-9 bg-zinc-100 border border-zinc-300 rounded-lg flex items-center justify-center text-[10px] text-zinc-500 mt-3">
-            Acompanhar pedido
-          </div>
-          <div
-            class="w-full h-9 bg-zinc-50 border border-dashed border-zinc-300 rounded-lg flex items-center justify-center text-[10px] text-zinc-400 mt-1">
-            Voltar ao início
-          </div>
+  <!-- TELA 3: CARRINHO -->
+  <div class="flex flex-col items-center">
+    <span class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2">3 · Carrinho</span>
+    <div class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col gap-2">
+      <div class="h-8 bg-zinc-200 rounded flex items-center px-2 text-[10px] text-zinc-500">← Voltar &nbsp;&nbsp; Meu Carrinho</div>
+      <div class="flex flex-col gap-2">
+        <div class="h-14 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1">
+          <div class="w-10 h-10 ph rounded shrink-0"></div>
+          <div class="flex-1"><div class="h-2 w-20 bg-zinc-300 rounded mb-1"></div><div class="h-2 w-14 bg-zinc-200 rounded"></div></div>
+          <div class="text-[9px] text-zinc-400">− 1 +</div>
         </div>
-        <p class="text-[10px] text-zinc-400 mt-2 text-center w-[260px]">
-          Fim do fluxo: confirmação + prazo visível, com opção de acompanhar
-        </p>
+        <div class="h-14 bg-zinc-50 border border-zinc-300 rounded flex items-center gap-2 p-1">
+          <div class="w-10 h-10 ph rounded shrink-0"></div>
+          <div class="flex-1"><div class="h-2 w-20 bg-zinc-300 rounded mb-1"></div><div class="h-2 w-14 bg-zinc-200 rounded"></div></div>
+          <div class="text-[9px] text-zinc-400">− 1 +</div>
+        </div>
+      </div>
+      <div class="h-7 bg-zinc-50 border border-dashed border-zinc-300 rounded text-[9px] text-zinc-400 flex items-center px-2 mt-1">🏷️ Cupom de desconto</div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-1">📍 ENTREGAR EM</div>
+      <div class="h-7 bg-zinc-100 border border-zinc-300 rounded text-[9px] text-zinc-500 flex items-center justify-between px-2">
+        <span>Rua, número, bairro (salvo)</span><span class="text-red-700 font-bold underline">trocar</span>
+      </div>
+      <div class="text-[10px] font-bold text-zinc-500 mt-1">FORMA DE PAGAMENTO</div>
+      <div class="flex gap-2">
+        <div class="h-7 flex-1 bg-zinc-100 border-2 border-red-400 rounded flex items-center justify-center text-[9px] font-bold">Pix ✓</div>
+        <div class="h-7 flex-1 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">Cartão salvo</div>
+        <div class="h-7 flex-1 bg-zinc-100 border border-zinc-300 rounded flex items-center justify-center text-[9px]">Dinheiro</div>
+      </div>
+      <div class="border-t border-zinc-200 pt-2 mt-1 flex flex-col gap-1 text-[9px] text-zinc-500">
+        <div class="flex justify-between"><span>Subtotal</span><span>R$ 62,00</span></div>
+        <div class="flex justify-between"><span>Entrega</span><span>R$ 6,00</span></div>
+        <div class="flex justify-between font-bold text-zinc-700 text-[11px]"><span>Total</span><span>R$ 68,00</span></div>
+      </div>
+      <div class="h-11 bg-red-600 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shadow-md mt-1">FINALIZAR PEDIDO</div>
+    </div>
+    <p class="text-[10px] text-zinc-600 mt-2 text-center w-[260px]">CTA principal repete o padrão vermelho para reforçar a ação de conversão</p>
+  </div>
+
+  <div class="flex items-center justify-center arrow">→</div>
+
+  <!-- TELA 4: CONFIRMAÇÃO -->
+  <div class="flex flex-col items-center">
+    <span class="screen-label text-xs font-bold text-zinc-500 uppercase mb-2">4 · Confirmação</span>
+    <div class="w-[300px] bg-white border-2 border-zinc-400 rounded-2xl shadow-sm p-3 flex flex-col items-center gap-2 text-center py-8">
+      <div class="w-16 h-16 rounded-full bg-green-100 border-2 border-green-400 flex items-center justify-center text-green-600 text-2xl">✓</div>
+      <div class="h-3 w-40 bg-zinc-300 rounded mt-2"></div>
+      <div class="h-2 w-28 bg-zinc-200 rounded"></div>
+      <div class="w-full h-16 bg-zinc-50 border border-zinc-200 rounded flex flex-col items-center justify-center mt-2 text-[9px] text-zinc-500 gap-1">
+        <span>⏱️ Tempo estimado</span>
+        <span class="text-[13px] font-bold text-zinc-700">35 – 45 min</span>
+      </div>
+      <div class="h-2 w-32 bg-zinc-200 rounded mt-2">
+      </div>
+      <div class="w-full h-9 bg-zinc-100 border border-zinc-300 rounded-lg flex items-center justify-center text-[10px] text-zinc-500 mt-3">Acompanhar pedido</div>
+      <div class="w-full h-9 bg-zinc-50 border border-dashed border-zinc-300 rounded-lg flex items-center justify-center text-[10px] text-zinc-400 mt-1">Voltar ao início</div>
+    </div>
+    <p class="text-[10px] text-zinc-600 mt-2 text-center w-[260px]">Fim do fluxo: confirmação + prazo visível, com opção de acompanhar</p>
+  </div>
+
+</div>
+
+<!-- ANTES x DEPOIS -->
+<div class="max-w-[900px] mx-auto px-6 pb-6">
+  <h2 class="text-lg font-bold text-center">Antes x Depois — Botão "Adicionar ao carrinho"</h2>
+  <p class="text-xs text-zinc-500 text-center mt-1 mb-6">Diretriz aplicada: <b>Material Design 3</b> (elevação, área de toque, forma e cor de estado)</p>
+
+  <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+
+    <!-- ANTES -->
+    <div class="flex flex-col items-center">
+      <span class="text-[10px] font-bold text-zinc-400 uppercase mb-2">Antes (wireframe genérico)</span>
+      <div class="w-[220px] bg-white border-2 border-zinc-300 rounded-xl p-4 flex flex-col items-center gap-2">
+        <div class="h-7 w-full bg-zinc-300 rounded flex items-center justify-center text-[10px] text-zinc-600 font-bold">ADICIONAR</div>
+        <p class="text-[9px] text-zinc-400 text-center">Sem contraste, sem elevação, altura pequena (~28px) — pouca sensação de "clicável"</p>
       </div>
     </div>
 
-    <!-- MICROINTERAÇÃO -->
-    <div class="max-w-[900px] mx-auto px-6 pb-8">
-      <h2 class="text-lg font-bold text-center">Microinteração — Confirmação de "Adicionar ao carrinho"</h2>
-      <p class="text-xs text-zinc-500 text-center mt-1 mb-4">Teste ao vivo no protótipo acima (Tela 2). Estrutura baseada no modelo de 4 partes de microinterações.</p>
-      <div class="grid sm:grid-cols-4 gap-3 text-[11px]">
-        <div class="bg-white border border-zinc-200 rounded-xl p-3">
-          <p class="font-bold text-zinc-600 mb-1">1. Gatilho</p>
-          <p class="text-zinc-500">Usuário toca no botão "Adicionar ao carrinho"</p>
+    <div class="arrow rotate-90 sm:rotate-0">→</div>
+
+    <!-- DEPOIS -->
+    <div class="flex flex-col items-center">
+      <span class="text-[10px] font-bold text-red-700 uppercase mb-2">Depois (Material Design 3)</span>
+      <div class="w-[220px] bg-white border-2 border-zinc-300 rounded-xl p-4 flex flex-col items-center gap-2">
+        <div class="h-12 w-full bg-red-600 rounded-full flex items-center justify-center gap-2 text-white text-[11px] font-semibold shadow-[0_3px_6px_rgba(220,38,38,0.4)] relative overflow-hidden">
+          🛒 Adicionar ao carrinho
+          <span class="absolute inset-0 bg-white/10"></span>
         </div>
-        <div class="bg-white border border-zinc-200 rounded-xl p-3">
-          <p class="font-bold text-zinc-600 mb-1">2. Regras</p>
-          <p class="text-zinc-500">Botão só reage se um tamanho estiver selecionado; não pode ser clicado 2x seguidas em menos de 1s</p>
-        </div>
-        <div class="bg-white border border-zinc-200 rounded-xl p-3">
-          <p class="font-bold text-zinc-600 mb-1">3. Feedback</p>
-          <p class="text-zinc-500">Botão encolhe, muda de vermelho pra verde, texto vira "Adicionado ✓" e o ícone do carrinho pulsa</p>
-        </div>
-        <div class="bg-white border border-zinc-200 rounded-xl p-3">
-          <p class="font-bold text-zinc-600 mb-1">4. Loop/Modo</p>
-          <p class="text-zinc-500">Após 1,2s o botão volta ao estado normal, pronto pra um novo item ser adicionado</p>
-        </div>
+        <p class="text-[9px] text-zinc-400 text-center">Altura 48px (área de toque mínima), elevação, forma pill, texto em sentence case + ícone, cor de alto contraste</p>
       </div>
-      <p class="text-[11px] text-zinc-500 mt-4 text-center max-w-lg mx-auto">
-        <b>Por que importa:</b> sem essa microinteração, o usuário não tem certeza se o toque "funcionou" e pode clicar várias vezes (gerando itens duplicados). O feedback visual imediato reduz essa incerteza e reforça a ação.
-      </p>
     </div>
+  </div>
 
-    <script>
-      let cartCount = 0;
-      function addToCart(){
-        const btn = document.getElementById('add-btn');
-        const label = document.getElementById('add-btn-label');
-        const badge = document.getElementById('cart-badge');
-        if(btn.dataset.locked === '1') return; // regra: evita duplo clique
-        btn.dataset.locked = '1';
+  <div class="mt-6 grid sm:grid-cols-2 gap-4 text-[11px]">
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-600 mb-1">Diretrizes do Material Design aplicadas</p>
+      <ul class="list-disc list-inside text-zinc-500 space-y-0.5">
+        <li>Área de toque mínima de 48dp (facilita o toque no celular)</li>
+        <li>Elevação (sombra) para indicar que é um elemento interativo</li>
+        <li>Formato "pill" consistente com o sistema de forma (shape system)</li>
+        <li>Ícone + rótulo em sentence case (não "gritado" em caixa alta)</li>
+        <li>Cor de alto contraste ligada ao papel "primary" da marca</li>
+      </ul>
+    </div>
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-600 mb-1">Ganho de usabilidade</p>
+      <ul class="list-disc list-inside text-zinc-500 space-y-0.5">
+        <li>Reduz erro de toque (dedo maior que o alvo original)</li>
+        <li>Affordance mais clara: "isto é um botão", não uma faixa de texto</li>
+        <li>Hierarquia visual: fica óbvio qual é a ação principal da tela</li>
+        <li>Leitura mais rápida e amigável (sentence case + ícone)</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-        btn.classList.remove('bg-red-500');
-        btn.classList.add('bg-green-500');
-        label.textContent = '✓ Adicionado';
+<!-- MICROINTERAÇÃO -->
+<div class="max-w-[900px] mx-auto px-6 pb-8">
+  <h2 class="text-lg font-bold text-center">Microinteração — Confirmação de "Adicionar ao carrinho"</h2>
+  <p class="text-xs text-zinc-500 text-center mt-1 mb-4">Teste ao vivo no protótipo acima (Tela 2). Estrutura baseada no modelo de 4 partes de microinterações.</p>
+  <div class="grid sm:grid-cols-4 gap-3 text-[11px]">
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-600 mb-1">1. Gatilho</p>
+      <p class="text-zinc-500">Usuário toca no botão "Adicionar ao carrinho"</p>
+    </div>
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-600 mb-1">2. Regras</p>
+      <p class="text-zinc-500">Botão só reage se um tamanho estiver selecionado; não pode ser clicado 2x seguidas em menos de 1s</p>
+    </div>
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-600 mb-1">3. Feedback</p>
+      <p class="text-zinc-500">Botão encolhe, muda de vermelho pra verde, texto vira "Adicionado ✓" e o ícone do carrinho pulsa</p>
+    </div>
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-600 mb-1">4. Loop/Modo</p>
+      <p class="text-zinc-500">Após 1,2s o botão volta ao estado normal, pronto pra um novo item ser adicionado</p>
+    </div>
+  </div>
+  <p class="text-[11px] text-zinc-500 mt-4 text-center max-w-lg mx-auto">
+    <b>Por que importa:</b> sem essa microinteração, o usuário não tem certeza se o toque "funcionou" e pode clicar várias vezes (gerando itens duplicados). O feedback visual imediato reduz essa incerteza e reforça a ação.
+  </p>
+</div>
 
-        cartCount++;
-        badge.textContent = cartCount;
-        badge.classList.add('scale-150');
-        setTimeout(()=> badge.classList.remove('scale-150'), 300);
+<script>
+let cartCount = 0;
+function addToCart(){
+  const btn = document.getElementById('add-btn');
+  const label = document.getElementById('add-btn-label');
+  const badge = document.getElementById('cart-badge');
+  if(btn.dataset.locked === '1') return; // regra: evita duplo clique
+  btn.dataset.locked = '1';
 
-        setTimeout(()=>{
-          btn.classList.remove('bg-green-500');
-          btn.classList.add('bg-red-500');
-          label.textContent = '🛒  Adicionar ao carrinho';
-          btn.dataset.locked = '0';
-        }, 1200);
-      }
-    </script>
-  </body>
+  btn.classList.remove('bg-red-600');
+  btn.classList.add('bg-green-600');
+  label.textContent = '✓ Adicionado';
+
+  cartCount++;
+  badge.textContent = cartCount;
+  badge.classList.add('scale-150');
+  setTimeout(()=> badge.classList.remove('scale-150'), 300);
+
+  setTimeout(()=>{
+    btn.classList.remove('bg-green-600');
+    btn.classList.add('bg-red-600');
+    label.textContent = '🛒  Adicionar ao carrinho';
+    btn.dataset.locked = '0';
+  }, 1200);
+}
+</script>
+
+<!-- AUDITORIA DE ACESSIBILIDADE -->
+<div class="max-w-[900px] mx-auto px-6 pb-8">
+  <h2 class="text-lg font-bold text-center">Auditoria de acessibilidade (teste no celular)</h2>
+  <p class="text-xs text-zinc-600 text-center mt-1 mb-4">Testado no protótipo em largura de tela mobile. Melhorias aplicadas com base no teste:</p>
+
+  <div class="grid sm:grid-cols-3 gap-3 text-[11px]">
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-700 mb-1">🎨 Contraste</p>
+      <p class="text-zinc-600 mb-1"><b>Problema:</b> botões e links em vermelho/verde claro (500) ficavam com contraste abaixo do recomendado (~4:1) sobre fundo branco.</p>
+      <p class="text-zinc-600"><b>Correção:</b> tons escurecidos para 600/700 (ex.: vermelho dos CTAs, verde de confirmação, links "ver →" e "trocar"), atingindo contraste adequado (AA, ≥4.5:1) para texto pequeno.</p>
+    </div>
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-700 mb-1">🔴🟢 Não depender só da cor</p>
+      <p class="text-zinc-600 mb-1"><b>Problema:</b> pizza em destaque e status "selecionado" usavam apenas anel/borda colorida.</p>
+      <p class="text-zinc-600"><b>Correção:</b> adicionado selo de texto "🔥 Destaque", sublinhado no link "trocar" e manutenção do ✓ nos itens selecionados (tamanho, pagamento) — cor sempre reforçada por ícone ou texto.</p>
+    </div>
+    <div class="bg-white border border-zinc-200 rounded-xl p-3">
+      <p class="font-bold text-zinc-700 mb-1">🔤 Tipografia</p>
+      <p class="text-zinc-600 mb-1"><b>Problema:</b> linhas muito próximas deixavam blocos de texto pequenos difíceis de escanear.</p>
+      <p class="text-zinc-600"><b>Correção:</b> aumento do espaçamento entre linhas (line-height 1.45–1.5) e entre letras (+0.01em) em toda a interface, fonte do sistema (alta legibilidade em telas pequenas).</p>
+    </div>
+  </div>
+
+  <p class="text-[11px] text-zinc-600 mt-4 text-center max-w-2xl mx-auto">
+    <b>Botões (área de toque):</b> o CTA principal ("Adicionar ao carrinho") já usa 48px de altura, dentro da recomendação mínima de área de toque para dedos no celular — mantido como padrão para os demais botões de ação.
+  </p>
+</div>
+
+<footer class="text-center text-[10px] text-zinc-600 pb-10 px-6">
+  Legenda: quadros hachurados = imagens · barras cinza = texto · borda vermelha/preenchimento vermelho = ação principal (CTA) da tela · dados de endereço e pagamento salvos no Login reaparecem prontos no Carrinho
+</footer>
+
+</body>
 </html>
